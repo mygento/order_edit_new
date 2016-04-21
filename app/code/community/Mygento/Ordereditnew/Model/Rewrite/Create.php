@@ -9,7 +9,6 @@
  */
 class Mygento_Ordereditnew_Model_Rewrite_Create extends Mage_Adminhtml_Model_Sales_Order_Create
 {
-
   /**
      * Create new order
      *
@@ -17,6 +16,9 @@ class Mygento_Ordereditnew_Model_Rewrite_Create extends Mage_Adminhtml_Model_Sal
      */
     public function createOrder()
     {
+        if(!Mage::getStoreConfig('ordereditnew/general/enabled')){
+          return parent::createOrder();
+        }
         $this->_prepareCustomer();
         $this->_validate();
         $quote = $this->getQuote();

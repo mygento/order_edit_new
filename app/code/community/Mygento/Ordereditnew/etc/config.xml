@@ -22,7 +22,7 @@
             </ordereditnew>
             <adminhtml>
               <rewrite>
-                <sales_order_create>Mygento_Ordereditnew_Model_Rewrite_Order</sales_order_create>
+                <sales_order_create>Mygento_Ordereditnew_Model_Rewrite_Create</sales_order_create>
               </rewrite>
             </adminhtml>
         </models>

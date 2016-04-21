@@ -2,7 +2,7 @@
 <config>
     <sections>
         <ordereditnew module="ordereditnew" translate="label">
-            <label>Print</label>
+            <label>Edit Order as New</label>
             <tab>allmygento</tab>
             <sort_order>90</sort_order>
             <show_in_default>1</show_in_default>
